@@ -44,6 +44,7 @@ describe('server/app.js', function() {
       .end((err, res) => {
         expect(err).not.exist;
         expect(JSON.stringify(res.text)).to.contain('Check it!');
+        done();
       });
   });
 })
